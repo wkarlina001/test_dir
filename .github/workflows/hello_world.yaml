@@ -11,7 +11,10 @@ jobs:
     - id: s01
       run: ls
     - id: s02
+      run: echo "CURR_DATE=$(date)" >> $GITHUB_OUTPUT
+    - id: s03
       uses: mscoutermarsh/cowsays-action@master
       with:
-        text: 'ship ship ship!'
+        text: 'ship ship ship! ${{ steps.s02.outputs.CURR_DATE }}'
         color: 'red'
+
