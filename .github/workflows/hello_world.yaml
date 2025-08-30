@@ -1,0 +1,16 @@
+name: hello_world
+
+#trigger
+on:
+- push
+
+#one or more jobs
+
+jobs:
+	greetings:
+		runs-on: ubuntu-latest
+		steps:
+		- id: s01
+			# run some commands in shell
+			run: echo "The current time is: $current_time"
+
