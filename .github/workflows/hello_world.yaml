@@ -9,5 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - id: s01
-      run: echo "The current time is: $date"
-	  
+      run: ls
