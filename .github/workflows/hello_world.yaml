@@ -10,7 +10,6 @@ jobs:
     steps:
     - id: s01
       run: ls
-    steps:
     - id: s02
       uses: mscoutermarsh/cowsays-action@master
       with:
